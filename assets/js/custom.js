@@ -888,24 +888,6 @@ function contents(){
                 })
             }
         
-            // const s8TitleScroll = (eventObj) => {
-            //     const {dom, offset, show} = eventObj;
-            //     if(!show){
-            //         const sct = $(window).scrollTop();
-            //         dom.each((index, element) => {
-            //             let eleOffset = offset[index];
-            //             if( sct - eleOffset + gHeightSize - gHeightSize * 0.14> 0 ){
-            //                 // console.log('들어옴');
-            //                 let text = dom.eq(index).find('.text'); 
-            //                 TweenMax.to( text, .6, { y:0 , opacity: 1, ease: Power0.easeNone});
-            //                 if(( dom.length - 1 ) === index ){
-            //                     effect.s8.title.show = true;
-            //                 }
-            //             }
-            //         });
-            //     }
-            // }
-        
             const navProgress = () => {
                 // 반응형
                 // nav
@@ -1157,26 +1139,6 @@ function contents(){
         let goLeft;
         $('body').css('overflow','visible');
     
-        // let effect = {
-        //     s1: {
-        //         title: {
-        //             dom: $('.hSec1 .stext > div'),
-        //             offset: [],
-        //         }        
-        //     },
-        //     s2: {
-        //         title: {
-        //             dom: $('.hSec2 .stext'),
-        //             offset: [],
-        //             show: false,
-        //         },
-        //         desc: {
-        //             dom: $('.hSec2 .desc > div'),
-        //             offset: [],
-        //             show: false,
-        //         },
-        //     },
-        // }
         let gWidthSize = $(window).width();
         let gHeightSize = $(window).height();
         
@@ -1231,13 +1193,6 @@ function contents(){
     
     
             }
-    
-            // if( goLeft > $('.hSec3').offset().left - gHeightSize/2){
-    
-            // }
-            
-    
-            
         });
     
         const s1TitleScroll = () => {
@@ -1294,11 +1249,6 @@ function contents(){
                 let eyeY = $('.hSec1 .icon .eye-white').height()/1000;
                 TweenMax.to('.hSec1 .icon .eye-apple',.5,{y: eyeY });
             }
-            
-            // const pointer = $('#pointer .circle');
-            // for( let i = 0; i < pointer.length; i++){
-            //     TweenMax.to(pointer.eq(i) ,1.5 ,{ left: pageX + i*2.5, top: pageY + i*2.5 + gWidthSize/25, ease: Expo.easeOut, delay: i*0.05});
-            // }
         })
     }
 }
