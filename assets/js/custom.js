@@ -28,6 +28,7 @@ function loading(){
 
         if(imgCurrent >= 100){ // 끝났을때
             clearInterval(progressTimer); //계산 그만
+            progressText.text( 100 + "%" );
             // progress.delay(1000).animate({ top: "-130%" },400); // 로딩창 위로 올림
 
 
