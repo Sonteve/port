@@ -196,7 +196,7 @@ body { background: #21252c;/*  user-select: none; */ /* overflow-x: hidden; */}
 .sec3 .contents .desc .textWrap { font-size: 1.8vw; line-height: 1.4; word-break: keep-all; height: 19vw; }
 .sec3 .contents .desc .textWrap > div { overflow: hidden;}
 .sec3 .contents .desc .textWrap > div span { display: inline-block; transform: translateY(100%); opacity: 0;}
-.sec3 .contents .desc .btnWrap { text-align: center; padding: 0 3vw;}
+.sec3 .contents .desc .btnWrap { text-align: center; display: flex; justify-content: space-between;}
 .sec3 .contents .desc .btnWrap .btn { width: 11vw; height: 4vw;  position: relative; display: inline-block; transform: translateY(100%); opacity: 0; margin: 0 .5vw;}
 /* .sec3 .contents .desc .btnWrap .btn.show a {  color: #fff;} */
 .sec3 .contents .desc .btnWrap .btn.show:before, 

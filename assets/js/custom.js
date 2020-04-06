@@ -1,4 +1,7 @@
 TweenMax.set('.progress .bar',{width:0});
+let mode;
+let modeCheck;
+let wWidth = $(window).width();
 function loading(){
     let progress = $(".progress"),
         progressText = progress.find(".progress-text"),
@@ -30,7 +33,7 @@ function loading(){
 
             
             TweenMax.to('.progress .under',1,{skewY:10, ease: Power0.easeNone});
-            TweenMax.to('.progress',1.5,{y: -imgCurrent*1.5 + '%',ease: Power0.easeOut});
+            TweenMax.to('.progress',1,{y: -imgCurrent*1.6 + '%',ease: Power0.easeOut});
 
             
 
@@ -44,7 +47,7 @@ function loading(){
     }
 }
 loading();
-let mode;
+
 
 $('.mode').click(function(){
     if($(this).hasClass('ver')){
@@ -55,16 +58,17 @@ $('.mode').click(function(){
     $('.m-select').fadeOut(500);
 })
 
-
-
-
-
-let modeCheck = setInterval(() => {
+if( wWidth > 1500 ){
+    modeCheck = setInterval(() => {
+                contents();
+            }, 1000);
+}else{
+    mode = 'v';
+    $('.m-select').css('display','none');
     contents();
-}, 1000);
+}
 
-
-const contents = () => {    
+function contents(){    
     if(mode === 'v'){
         setTimeout(() => {
             clearInterval(modeCheck);
