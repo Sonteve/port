@@ -1,4 +1,4 @@
-"# 안녕하세요 신입 FRONT-END 손현준의 PORTFOLIO SITE repository 입니다."
+"# 안녕하세요PORTFOLIO SITE repository 입니다."
 
 방문해 주셔서 감사합니다.
 
